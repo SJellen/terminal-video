@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #30475e;
 }
 
 .App-logo {
@@ -14,16 +15,17 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #30475e;
   height: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ececec;
+  text-shadow: 3px 3px 5px black;
   padding: 20px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .spinner {
@@ -32,7 +34,11 @@
 }
 
 .App-intro {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-size: large;
+  color: #ececec;
+  font-weight: 400;
 }
 
 
@@ -44,6 +50,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  background-color: #ececec;
 }
 
 .App-header h2 {
@@ -77,24 +84,26 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10px;
+
 }
 
 input[type="submit"] {
   padding: 5px;
   background-color: transparent;
-  color: black;
-  border: 1px solid black;
+  color: #f2a365;
+  border: 1px solid #f2a365;
   width: 80px;
   margin-left: 5px;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #282c34;
+  background-color: #f2a365;
   color: antiquewhite;
+  transition: .75s ease-out;
 }
 
-.search > input[tyoe='text'] {
+.search > input[type='text'] {
   width: 40%;
   min-width: 170px;
 }
